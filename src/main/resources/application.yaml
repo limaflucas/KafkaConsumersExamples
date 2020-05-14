@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    consumer:
+      group-id: examples
+      properties:
+        partition:
+          assignment:
+            strategy: "org.apache.kafka.clients.consumer.RoundRobinAssignor"
+
+application:
+  kafka:
+    topic: "data"
